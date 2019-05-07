@@ -1,5 +1,8 @@
 # ML4MS notes
 
+- to look up:
+   - accessible mathematical introduction to machine learning (kernals etc)
+   
 ## Day One
 
 ### luca ghiringhelli, FHI, (SISSO)
