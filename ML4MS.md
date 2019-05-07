@@ -1,7 +1,10 @@
 # ML4MS notes
 
-- to look up:
-   - accessible mathematical introduction to machine learning (kernals etc)
+To look up:
+- accessible mathematical introduction to machine learning (kernals etc): https://mml-book.github.io/
+- https://www.inference.org.uk/itprnn/book.pdf
+- https://www.nature.com/articles/nphys4053
+- https://onlinelibrary.wiley.com/doi/full/10.1002/qua.24954
    
 ## Day One
 
