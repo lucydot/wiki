@@ -64,6 +64,7 @@ To look up:
 
 ### Tutorial notes
 
+- in the data folder there is a large (~5000) structure set which can be used as we want
 - unsupervised learning can be used for dimensionality reduction
 - Dscribe package
 - In reality you'd probably use tensorflow (and GPUs) rather than scikitlearn
