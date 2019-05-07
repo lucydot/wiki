@@ -37,6 +37,7 @@
 - The activation function
 - A nice basic NN example - fitting a parabola
 
+
 - ANN negatives:
   - can only be used for one number of atoms once trained
   - ANNs are not automatically invariant to rotation or exchange of identical atoms
@@ -51,3 +52,11 @@
   -  PRB 2017 Ceder Artrith: RDF and ADF are expanded as Chebyshev polynomials (after gaussian broadening) so that they form invariant descriptors for a battery material
   - ML for structural prediction and transport properties of amorphous N doped Li3PO4, an electrolyte: Lacivita et al 2018 chemistry of materials.
   - Artrith 2019 JPhysEnergy - good practice / sharing
+
+
+## Day Two
+
+### Tutorial notes
+
+- unsupervised learning can be used for dimensionality reduction
+- Dscribe package
