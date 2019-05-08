@@ -70,3 +70,6 @@ To look up:
 - In reality you'd probably use tensorflow (and GPUs) rather than scikitlearn
 - There is the use of randomness (see here for where it may creep in: https://machinelearningmastery.com/randomness-in-machine-learning/) which means that re-running with the *same* data and *same* hyperparameters means that different errors are gotten - I'm still not clear on how this should be reported in literature (average? over how many runs?)
 - You can break NN with a very simple function: f=xy. 
+
+
+ABC.py warwick
