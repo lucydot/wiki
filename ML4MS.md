@@ -143,7 +143,7 @@
 
 - Interesting ways to visualise correlation and distance between features, apparently this appraoch is quite standard in ML field but not seen so much in materials science so far (presenter is from latter field)
 
- - TO ADD: ![](./IMG-0887.JPG)
+![](./IMG-0887.JPG)
 
  ## Day Four
 
