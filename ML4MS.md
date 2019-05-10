@@ -145,4 +145,48 @@
 
  - TO ADD: ![](./distance_plots)
 
+ ## Day Four
+
+ ### Bomberelli
+
+ - talk themes: representation learning and physics-based priors for inverse design of materials
+ - Motivation: we need new materials fast - remediation of damage already done
+ - There is a continuum between ML and physics based modelling
+ - ML positives: + fast, uses large data, negatives: only as good as training, can be difficult to access data
+ - ML can help us to bypass calculations
+ - what is often important is the multiscale aspect
+ - An important starting point is to "know the space" - only way to gather data in a strategic way?
+ - this overall approach has been shown for OLEDs and organic flow batteries
+ - It is common to embed physics using features from first principles (radius, electronic srtuct etc) but they are not degree of freedom - it's not a knob you can twiddle. Better is to use end-to-end learning, starting with the most basic parameters as input - parameters which we can control (like atomic number)
+ - but when there is less data available, embed prior knowledge of the physics
+ - methodology is message passing neural nets
+ - trial and error vs high throughput vs inverse design (nice schematic) 
+ - generative means: can find new members of a distribution without knowing what the distribution itself is.
+ - the importance of keeping it sensible: domain expertise
+ - course graining: if there are atoms that move together, we can use a collective variable (super atom) to describe them
+ - we can use ML to work out how best to course grain
+
+### Karsten Jacobsen
+
+- theme: finding new materials when you don't know where the atoms are
+- key questions are: which properties? / how? / in what part of the materials space?
+- eg: light induced water splitting. The important properties are band alignment, stability, band gap for absorption...
+- use a screening funnel
+- we can explore certain structural groups:
+	- cubic perovskites: screening to match criteria above and only get 20 candidates incl. some previously known (which is nice!)
+	- sulfide perovskites for ....
+	- but we did many calculations that were not necessary. Is there a cleverer way?
+- another approach is to explore all known materials on eg: OQMD
+
+- machine learning approach: kernel regression, which is basically fitting a function.
+- kernel regression: drop a gaussian on each point and make linear combination of gaussians that will go through said points perfect. To find the weight of each gaussian is basic matrix algebra; inverse of a matrix.
+- kernel regression with uncertainty: gaussian process. The basis for uncertainty is from bayes theorem. The gaussian on each point is now linked to a correlation (I didn't understand the point made). Vary the length and it will have a large effect. The ensembe of functions gives an estimate for uncertainty.
+
+- So how do we classify materials without using atomic positions?
+- Standard approach is composition / symmetry / prototypes.
+- But if we use symmetry, we don't know certain angles, we dont know volumes.
+- Use graphs as an alternative to prototyping: 2018 paper on arxiv.
+- Define a voronoi cell. Create a graph for all the atoms that share a face --> this is well defined. Label graph with a symmetry. So the only info put in is the atomic number of the atoms and the connections to the neighbours (topology) - no distance information (although other people have included this in their graph neural network studies)
+- This graph is mapped onto a message passing neural network. This approach works better for ternary (LW - for more complex systems! It's cool that this method works better with complexity...a rare thing..). For silicon the graph struggles differentiting between similar strutures.
+
 
