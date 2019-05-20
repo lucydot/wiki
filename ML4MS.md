@@ -1,5 +1,15 @@
 # ML4MS notes
 
+Summary: 
+
+- Definitely recommend this conference, the tutorial and introductory lectures were particularly useful. 
+- Dscribe package is nice to use and tutorials available via link on slack. 
+- *Experimental design.* Training set is important  - random can be bad (use sketchmap). 
+- There is still a lot of emphasis on descriptors: Course grain descriptors (Luca). Need for symmetry really driven home a number of times (Michele).
+- Ceriotti made good use of learning curve to look at multiscale nature of problems. 
+- Michael Sluydts on defects - active learning with gaussian process model which gives you a mean and std deviation. Data from 3 vacancies is used to simulate energy/forces on up to 13 vacancies in 216 atoms. There was a question about calculating vibrational properties using this approach but this wasn't really siezed upon. The forces are learnt directly!
+- I still don't understand best practice re: reporting when there is an element of randomness.
+
 ## Resources to look up
 - accessible mathematical introduction to machine learning (kernals etc): 
 	- https://mml-book.github.io/
