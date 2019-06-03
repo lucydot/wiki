@@ -2,12 +2,20 @@
 
 Summary: 
 
-- Definitely recommend this conference, the tutorial and introductory lectures were particularly useful. 
-- Dscribe package is nice to use and tutorials available via link on slack. 
-- *Experimental design.* Training set is important  - random can be bad (use sketchmap). 
-- There is still a lot of emphasis on descriptors: Course grain descriptors (Luca). Need for symmetry really driven home a number of times (Michele).
-- Ceriotti made good use of learning curve to look at multiscale nature of problems. 
-- Michael Sluydts on defects - active learning with gaussian process model which gives you a mean and std deviation. Data from 3 vacancies is used to simulate energy/forces on up to 13 vacancies in 216 atoms. There was a question about calculating vibrational properties using this approach but this wasn't really siezed upon. The forces are learnt directly!
+- Helsinki is a very relaxing city to visit and the facilities at Aalto seem second to none!
+- workshop aim: train next generation of scientists to exploit data driven techniques in materials science
+- Definitely recommend this conference, the tutorial and introductory lectures were particularly useful:
+	- tutorial notebooks a little hidden, but can be found on installation instructions: http://ml4ms2019.aalto.fi/wp-content/uploads/2019/04/setup_instructions_linux.txt
+	- descriptors (ACSF, SOAP, MBTR), unsupervised learning for dimensionality reduction (PCA, tSNE), supervised learning (KRR, NN)
+- DScribe python package for creating machine learning descriptors for atomistic systems: Coulomb matrix, Sine matrix, Ewald matrix, Atom-centered Symmetry Functions, Smooth Overlap of Atomic Orbitals, Many-body Tensor Representation (MBTR)
+
+- *Experimental design* The training set is important  - choosing random points can be bad. 
+	- sketchmap and farthest point sampling: Ceriotti&Parinello, non-linear dimensionality reduction, in development.
+- A lot of emphasis on descriptors: 
+	- Course grain descriptors (Luca): eg - kaggle for predicting a TCO. The winner was a course grained model using a soap like descriptor + NN. The descriptor was a "dressed chemical species" - it showed that local topology can be more important than exact angles and distances.
+	- The need to build in symmetry (Ceriotti)
+- Ceriotti uses learning curves of models with varying cutoff lengths to look at multiscale nature of problems - for example, a 2A cutoff means that only covalent interactions can be learnt (Willat PCCP 2018).
+- Michael Sluydts, ML of defect properties: active learning with a gaussian process model that gives you a mean and std deviation so that new training points can be identified. Data from 3 vacancies is used to simulate energy/forces on up to 13 vacancies in 216 atoms. There was a question about calculating vibrational properties using this approach but this wasn't really siezed upon. The forces are learnt directly.
 - I still don't understand best practice re: reporting when there is an element of randomness.
 
 ## Resources to look up
