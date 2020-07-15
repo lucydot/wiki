@@ -8,7 +8,7 @@ An atom has typically 4 bands so for a 96 atom system (a rough lower bound of th
 
 Northumbria University has a machine that could handle this system size BUT these calculations are very time intensive calculation; a single calculation could take weeks to run. Having a dedicated computer should also make it easier for masters students / summer students etc to get short term access to a decent machine.
 
-*What compute resources are needed for these?*
+*What machine specification is required?*
 
 - type of CPU --> intel (VASP is very reliant on Intel’s Fortran compiler). Archer has Intel Xeon E5-2697 v2 (ivy bridge), Larsson reports that the Xeon E5-2600 series (2650 and 2660 models) give the low clock frequency/high RAM tradeoff that we're looking for with VASP calcs. Cache?
 Jonathan reports that Vasp runs significantly more efficiently with the newer intel skylake processors.
