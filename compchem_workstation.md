@@ -22,16 +22,16 @@ Jonathan reports that Vasp runs significantly more efficiently with the newer in
 
 From my experience using GPU nodes on Piz Daint, the NSIM needed tweaking for each system adding another layer of tests, and LREAL=False not being supported was a real pain: I needed to set ROPT low and ran into memory issues. NVIDIA Tesla P100s have been optimised for use with VASP.
 
-Links
------
-https://www.pdc.kth.se/software/software/VASP/crayos7/5.4.4-vanilla/index_using.html
-https://www.nsc.liu.se/~pla/blog/2013/09/04/hardware-for-vasp
-https://zworkstations.com/products/
-http://www.softpanorama.org/HPC/Molecular_modeling_software/Vasp/vasp_performance.shtml
+*Links*
+
+- https://www.pdc.kth.se/software/software/VASP/crayos7/5.4.4-vanilla/index_using.html
+- https://www.nsc.liu.se/~pla/blog/2013/09/04/hardware-for-vasp
+- https://zworkstations.com/products/
+- http://www.softpanorama.org/HPC/Molecular_modeling_software/Vasp/vasp_performance.shtml
 
 *Budget*
 
-£9,000 including VAT (£7,500 excl. VAT). Possibility to use some of my start-up budget? (up to £2000)
+- £9,000 including VAT (£7,500 excl. VAT). Possibility to use some of my start-up budget? (up to £2000)
 
 *Examples* 
 
