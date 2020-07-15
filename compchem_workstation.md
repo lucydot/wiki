@@ -13,9 +13,11 @@ Northumbria University has a machine that could handle this system size BUT thes
 - type of CPU --> intel (VASP is very reliant on Intel’s Fortran compiler). Archer has Intel Xeon E5-2697 v2 (ivy bridge), Larsson reports that the Xeon E5-2600 series (2650 and 2660 models) give the low clock frequency/high RAM tradeoff that we're looking for with VASP calcs. 
 Jonathan reports that Vasp runs significantly more efficiently with the newer intel skylake processors.
 - number of cores --> determined by the number of atoms in your system (and number of kpoints). Note that hyperthreading is not effective for running VASP calculations. Ideally 24 cores. 
-- RAM: important to have sufficient clock speed (DDR3 or DDR4). 4GB/core is ideal, for handling hybrid functionals. As a point of reference, Archer has 24 physical cores per node, 64GB RAM per node or 128GB for the largmemory nodes
-- clock frequency: This is not as important as memory, which is the limiting factor for VASP calculations. 
-- storage: hybrid SSD and HDD drives give good speed and capacity. From specs for the Walsh group Curie machine, could look for something in the region of 7TB HDD, SSD 250GB
+- RAM: Memory is often the limiting factor for VASP calculations. It is important to have sufficient clock speed (DDR3 or DDR4). 4GB/core is ideal, for handling hybrid functionals. As a point of reference, Archer has 24 physical cores per node, 64GB RAM per node or 128GB for the largmemory nodes
+- storage: hybrid SSD and HDD drives give good speed and capacity. From specs for the Walsh group Curie machine, could look for something in the region of 7TB HDD, SSD 250GB.
+- CACHE: ?
+- RAID?
+- OS: Linux, Ubuntu/Debian?
 
 *Is it worth considering GPUs?*
 
@@ -27,5 +29,19 @@ https://www.pdc.kth.se/software/software/VASP/crayos7/5.4.4-vanilla/index_using.
 https://www.nsc.liu.se/~pla/blog/2013/09/04/hardware-for-vasp
 https://zworkstations.com/products/
 
+*Budget*
+
+£9,000 including VAT (£7,500 excl. VAT). Possibility to use some of my start-up budget? (up to £2000)
+
+*Examples* 
+
+- HP Precision 7920 Tower Data Science Workstation: 
+  - £8,333.87 excl. VAT
+  - CPU: Intel Xeon Gold 5220 2.2GHz, 3.9GHz Turbo, 18C, 10.4GT/s 2UPI, 24.75MB Cache, HT (125W) DDR4-2666)
+  - RAM: 192GB (12x16GB) 2666MHz DDR4 RDIMM ECC
+  - HardDrive: M.2 256GB PCIe NVMe Class 40 Solid State Drive (Front PCIe FlexBay)
+  - https://www.dell.com/en-uk/work/shop/desktop-and-all-in-one-pcs/precision-7920-tower-data-science-workstation/spd/precision-7920-workstation/xctopt7920dswsemea?clickid=1101l8vNmSE9&gacd=9684977-23767310-5795892-266863068-128202556&dgc=af&u==1101l4683&dclid=CJTizObcgeoCFYoFBgAdBaIPMg&configurationid=1a080c94-06e0-4210-adea-14312d8b546f#techspecs_section
+  
+- Jarv: I got a 6-core XEON but with 64 GB ECC memory, a TB SSD and a medium-range graphics card, but it was about £1400
 
 
