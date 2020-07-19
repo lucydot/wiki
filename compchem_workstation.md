@@ -28,6 +28,7 @@ From my experience using GPU nodes on Piz Daint, the NSIM needed tweaking for ea
 - https://www.nsc.liu.se/~pla/blog/2013/09/04/hardware-for-vasp
 - https://zworkstations.com/products/
 - http://www.softpanorama.org/HPC/Molecular_modeling_software/Vasp/vasp_performance.shtml
+- performance report on Intel Xeon Gold 6148 Processor (20c, 27.5M Cache, 2.40 GHz) [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiE9M34j9nqAhXoQUEAHak_BNMQFjABegQIBhAB&url=https%3A%2F%2Fwww.scd.stfc.ac.uk%2FSiteAssets%2FPages%2FCIUK-2018-Programme%2FMartyn_Guest.pdf&usg=AOvVaw3_7VLcBatVPuinG5KCyRKS)
 
 *Budget*
 
