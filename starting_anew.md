@@ -7,7 +7,7 @@ Ooh a sparking new OS. Here are the steps I used to setup on Big Sur, adapted fr
 
 ### My $HOME
 
-In it's cleanest state my computer looks something like this:
+In it's cleanest state my home looks something like this:
 
 `~/bin/` (symlinks to binary exectuables), `~/Dropbox/` (for documents I don't need version controlled), `~/Repos/` (my Git repos for research projects and websites), `~/Code` (Downloaded code and Git repos for code bases I'm working on), `~/Code/Scripts` (a Git repo with various scripts that don't count as code in their own right), `~/Zotero` (zotero data), `~/miniconda3`, `~/.ssh` (ssh config files and keys), `~/.zshrc`(zsh profile settings), `~/Data` (raw DFT data, scp'd from the rdf)
 
