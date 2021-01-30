@@ -159,3 +159,7 @@ Git can be installed via Conda (I install it on my base Conda environment as it 
 
 Zotero (replace the ~/Zotero folder with the one you have saved), pycharm, simplenote, iTerm, MacDown, Zoom, Sublime, Omnigraffle, Firefox (with sci-hub and tabnotes extensions), Dropbox, Office365, Vesta, LaTeXit, MacTeX (includes LaTeXit and TexShop)
 
+-----
+
+Woo hoo! Spring clean complete. Time to make it messy again.
+
