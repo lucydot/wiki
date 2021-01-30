@@ -2,8 +2,8 @@ Ooh a sparking new OS. Here are the steps I used to setup on Big Sur, adapted fr
 
 ### Associated files
 
-- `Makefile.include` for vasp is [here]().
-- minimal `.zshrc` is [here]().
+- `Makefile.include` for vasp is [here](./Makefile.include).
+- minimal `.zshrc` is [here](./zshrc).
 
 ### My $HOME
 
