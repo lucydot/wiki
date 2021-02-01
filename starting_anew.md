@@ -32,7 +32,7 @@ Note:
 
 ### Install new programmes, tools, data, code...
 
-#### Setup up terminal and zsh
+#### Install command line tools
 
 Open Terminal and type `make` to install the command line tools module (basic UNIX commands and a gcc compiler).
 
@@ -66,7 +66,7 @@ Source the environment variables in your `.zshrc`, as outlined in the documentat
 source /opt/intel/oneapi/setvars.sh
 ```
 
-Check install with `ifort --version`, `icc --version`, `icc --version`
+Note that I comment the above line out once I'm finished compiling the necessary code. Check install with `ifort --version`, `icc --version`, `icpc --version`.
 
 #### MPI for parallelism
 
@@ -159,9 +159,29 @@ Git can be installed via Conda (I install it on my base Conda environment as it 
 
 MacTeX is over 2GB and I don't use the TexShop gui that comes with it, or many of the packages. Instead I download the [Basic Tex and Ghostscript](http://www.tug.org/mactex/morepackages.html) (each installed seperately) and [LaTeXit](https://www.chachatelier.fr/latexit/latexit-downloads.php?lang=en) for inserting into posters. It all worked for me without having manually having to mess with $PATHS.
 
-### Setup iTerm and oh-my-zsh
+### Install iTerm and oh-my-zsh
 
 Install [iTerm2](https://iterm2.com/) and Oh my [zsh](https://github.com/ohmyzsh/ohmyzsh). Install the nice materialsdesign colour theme in iTerm2 following [this](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c). TODO: figlet and quotes.
+
+### Install hugo and setup the repo for an existing website
+
+Install hugo (for building static websites) from a tar ball (with binary in `/usr/local/bin`): https://gohugo.io/getting-started/installing.
+
+In the website repo remove the cached theme submodule (which is empty but remains on the index) and then add it as a submodule. Check it runs ok locally.
+
+```
+git rm --cached ./themes/code-editor
+git submodule add https://github.com/aubm/hugo-code-editor-theme.git themes/code-editor
+hugo server
+```
+
+Do the same for the public folder where the website is hosted
+
+```
+git rm --cached public
+git submodule add -b master git@github.com:lucydot/lucydot.github.io.git public
+```
+
 
 ### Install `.dmg`'s
 
