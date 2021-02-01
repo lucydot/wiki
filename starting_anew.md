@@ -155,9 +155,17 @@ Git can be installed via Conda (I install it on my base Conda environment as it 
 
 ```conda install -c anaconda git```
 
-#### Install `.dmg`'s
+### Install TeX
 
-Zotero (replace the ~/Zotero folder with the one you have saved), pycharm, simplenote, iTerm, MacDown, Zoom, Sublime, Omnigraffle, Firefox (with sci-hub and tabnotes extensions), Dropbox, Office365, Vesta, LaTeXit, MacTeX (includes LaTeXit and TexShop)
+MacTeX is over 2GB and I don't use the TexShop gui that comes with it, or many of the packages. Instead I download the [Basic Tex and Ghostscript](http://www.tug.org/mactex/morepackages.html) (each installed seperately) and [LaTeXit](https://www.chachatelier.fr/latexit/latexit-downloads.php?lang=en) for inserting into posters. It all worked for me without having manually having to mess with $PATHS.
+
+### Setup iTerm and oh-my-zsh
+
+Install [iTerm2](https://iterm2.com/) and Oh my [zsh](https://github.com/ohmyzsh/ohmyzsh). Install the nice materialsdesign colour theme in iTerm2 following [this](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c). TODO: figlet and quotes.
+
+### Install `.dmg`'s
+
+Zotero (replace the ~/Zotero folder with the one you have saved), pycharm, simplenote, iTerm, MacDown, Sublime, Omnigraffle, Firefox (with sci-hub and tabnotes extensions), Dropbox, Office365 (TODO: setup OneDrive), Vesta
 
 -----
 
