@@ -70,6 +70,8 @@ Note that I comment the above line out once I'm finished compiling the necessary
 
 #### MPI for parallelism
 
+UPDATE: see https://www.scivision.dev/intel-oneapi-macos-mpi/
+
 Downloaded the latest source code of [openmpi](https://www.open-mpi.org).
 
 Configure for compilation with the intel compilers:
